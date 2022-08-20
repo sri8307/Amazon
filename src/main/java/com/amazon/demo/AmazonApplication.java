@@ -2,13 +2,21 @@ package com.amazon.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class AmazonApplication {
+public class AmazonApplication  {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AmazonApplication.class, args);
-		System.out.println("Git Edit for Testing");
-	}
+   /*
+    extends SpringBootServletInitializer
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(AmazonApplication.class);
+    }*/
+
+    public static void main(String[] args) {
+        SpringApplication.run(AmazonApplication.class, args);
+    }
 
 }
